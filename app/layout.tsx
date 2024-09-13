@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${space_mono.className} antialiased`}
+        className={`${space_mono.className} antialiased bg-lightGray dark:bg-background_dark grid h-screen place-items-center text-[15px] leading-[25px] text-black dark:text-white_dark`}
       >
         {children}
       </body>
