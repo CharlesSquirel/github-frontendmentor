@@ -8,11 +8,11 @@ export default function UserStatsColumn({
   data,
 }: UserStatsProps) {
   return (
-    <div className='flex flex-col'>
-      <p className='text-[13px] text-darkGray'>
+    <div className='flex flex-col md:gap-0 gap-2 items-center md:items-start'>
+      <p className='md:text-[13px] text-[11px] text-darkGray dark:text-white_dark'>
         {title}
       </p>
-      <p className='font-bold text-[22px] text-black'>
+      <p className='font-bold md:text-[22px] text-[16px] text-black dark:text-white_dark'>
         {data}
       </p>
     </div>

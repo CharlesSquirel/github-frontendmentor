@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${space_mono.className} antialiased bg-lightGray dark:bg-background_dark grid h-screen place-items-center text-[15px] leading-[25px] text-black dark:text-white_dark`}
+        className={`${space_mono.className} antialiased bg-lightGray dark:bg-background_dark md:grid h-screen md:place-items-center text-[15px] leading-[25px] text-black dark:text-white_dark px-[24px] md:px-0 pt-[31px] md:pt-0 pb-[70px] md:pb-0`}
       >
         {children}
       </body>

@@ -26,11 +26,15 @@ export default function UserInfo({
       <p
         className={`${
           isLink
-            ? 'underline cursor-pointer'
+            ? 'underline cursor-pointer hover:opacity-85'
             : ''
-        } text-[15px] text-darkBlue`}
+        } md:text-[15px] text-[13px] text-darkBlue dark:text-white_dark`}
       >
-        {text}
+        {isLink ? (
+          <a href={text}>{text}</a>
+        ) : (
+          text
+        )}
       </p>
     </div>
   );
