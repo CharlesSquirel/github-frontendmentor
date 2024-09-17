@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'selector',
   theme: {
     extend: {
       colors: {
@@ -20,6 +21,7 @@ const config: Config = {
         darkBlue: '#4B6A9B',
         lightGray: '#F6F8FF',
         red: '#f74646',
+        lightModeHover: '#90a4d4',
       },
     },
   },
