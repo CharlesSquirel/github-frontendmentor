@@ -28,7 +28,7 @@ export default function UserInfo({
           isLink
             ? 'underline cursor-pointer hover:opacity-85'
             : ''
-        } md:text-[15px] text-[13px] text-darkBlue dark:text-white_dark`}
+        } sm:text-[15px] text-[13px] text-darkBlue dark:text-white_dark`}
       >
         {isLink ? (
           <a href={text}>{text}</a>

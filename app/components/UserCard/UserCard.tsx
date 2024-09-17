@@ -11,7 +11,7 @@ import UserCardHeaderMobile from './UserCardHeaderMobile';
 
 export default function UserCard() {
   return (
-    <article className='bg-white gap-[37px] md:p-[48px] py-[32px] px-[24px] min-h-[419px] rounded-[15px] shadow-lg flex items-start dark:bg-gray_dark'>
+    <article className='bg-white gap-[37px] sm:p-[40px] md:p-[48px] py-[32px] px-[24px] min-h-[419px] rounded-[15px] shadow-lg flex items-start dark:bg-gray_dark'>
       <Image
         src={userMockImg}
         alt="User's avatar"
@@ -19,7 +19,7 @@ export default function UserCard() {
         height={117}
         className='rounded-full hidden md:block'
       />
-      <div className='flex flex-col md:w-[480px] w-[279px]'>
+      <div className='flex flex-col sm:w-[493px] md:w-[480px] w-[279px]'>
         <UserCardHeaderMobile
           userDate='Joined 25 Jan 2011'
           userName='The Octocat'
