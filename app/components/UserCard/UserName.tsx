@@ -1,5 +1,5 @@
 interface UserNameProps {
-  name: string;
+  name?: string;
 }
 
 export default function UserName({
@@ -7,7 +7,7 @@ export default function UserName({
 }: UserNameProps) {
   return (
     <h2 className='font-bold sm:text-[26px] text-[13px] text-black dark:text-white_dark'>
-      {name}
+      {name ? name : 'The Octocat'}
     </h2>
   );
 }

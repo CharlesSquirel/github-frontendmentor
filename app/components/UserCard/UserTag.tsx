@@ -1,5 +1,5 @@
 interface UserTagProps {
-  tag: string;
+  tag?: string;
 }
 
 export default function UserTag({
@@ -7,7 +7,7 @@ export default function UserTag({
 }: UserTagProps) {
   return (
     <p className='text-blue md:mb-[20px] mb-[5px] sm:text-[16px] text-[13px]'>
-      {tag}
+      {tag ? tag : '@octocat'}
     </p>
   );
 }
