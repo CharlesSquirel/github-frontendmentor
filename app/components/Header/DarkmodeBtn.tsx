@@ -69,20 +69,6 @@ export default function DarkmodeBtn() {
         ) : (
           <SunIcon />
         )}
-        {/* <Image
-          src={
-            !isDark ? moonImg : sunImg
-          }
-          alt='Switch color mode button'
-          width={20}
-          height={20}
-          className={` 
-      ${
-        !isDark
-          ? 'group-hover:text-heading'
-          : 'group-hover:fill-lightModeHover'
-      }`}
-        /> */}
       </button>
     </div>
   );
