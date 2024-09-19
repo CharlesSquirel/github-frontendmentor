@@ -2,6 +2,7 @@ import Image from 'next/image';
 import searchImg from '../../assets/icon-search.svg';
 import SubmitUserBtn from './SubmitUserBtn';
 import SearchInput from './SearchInput';
+import ErrorUserMessage from './ErrorUserMessage';
 export default function SearchForm() {
   return (
     <form className='sm:p-3 py-2 pr-2 sm:mb-[24px] mb-[16px] w-full flex bg-white rounded-[15px] dark:bg-gray_dark justify-between text-[18px] text-heading placeholder:text-darkBlue shadow-lg h-[69px] items-center'>
@@ -16,13 +17,7 @@ export default function SearchForm() {
         <SearchInput />
       </div>
       <div className='flex items-center gap-6'>
-        <p
-          aria-live='polite'
-          role='alert'
-          className='text-red font-bold md:text-[15px] text-[13px] hidden md:block'
-        >
-          No results
-        </p>
+        <ErrorUserMessage />
         <SubmitUserBtn />
       </div>
     </form>

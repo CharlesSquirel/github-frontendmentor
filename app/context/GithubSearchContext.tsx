@@ -6,18 +6,19 @@ import {
   useContext,
   useState,
 } from 'react';
+import { formatJoinDate } from '../utils/formatJoinDate';
+import { defaultUser } from '../data/defaultUser';
 
 const github_url =
   'https://api.github.com/users';
 
-interface GithubUserInterface {
+export interface GithubUserInterface {
   login: string;
   avatar_url: string;
   name: string;
   blog: string;
   location: string;
   company: string;
-  email: string;
   bio: string;
   twitter_username: string;
   created_at: string;
@@ -52,7 +53,7 @@ export default function GithubUserProvider({
   const [githubUser, setGithubUser] =
     useState<
       GithubUserInterface | undefined
-    >(undefined);
+    >(defaultUser);
   const [userSearch, setUserSearch] =
     useState('');
 
@@ -75,7 +76,7 @@ export default function GithubUserProvider({
           'No user data found'
         );
       }
-      // Zmapowanie obiektu, aby zwrócić tylko pola zdefiniowane w interfejsie
+
       const mappedUser: GithubUserInterface =
         {
           login: data.login,
@@ -84,11 +85,12 @@ export default function GithubUserProvider({
           blog: data.blog,
           location: data.location,
           company: data.company,
-          email: data.email,
           bio: data.bio,
           twitter_username:
             data.twitter_username,
-          created_at: data.created_at,
+          created_at: formatJoinDate(
+            data.created_at
+          ),
           public_repos:
             data.public_repos,
           followers: data.followers,

@@ -4,6 +4,7 @@ import { useUser } from '@/app/context/GithubSearchContext';
 
 export default function SearchInput() {
   const { setUserSearch } = useUser();
+
   return (
     <input
       onChange={(e) =>

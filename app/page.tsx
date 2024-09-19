@@ -5,7 +5,7 @@ import GithubUserProvider from './context/GithubSearchContext';
 
 export default function Home() {
   return (
-    <div className='flex flex-col sm:w-[573px] md:w-[730px] w-[327px]'>
+    <div className='flex flex-col sm:w-[573px] md:w-[730px] w-[327px] min-h-[613px]'>
       <Header />
       <GithubUserProvider>
         <SearchForm />

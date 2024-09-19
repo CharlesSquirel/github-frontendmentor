@@ -7,7 +7,7 @@ export default function UserName({
 }: UserNameProps) {
   return (
     <h2 className='font-bold sm:text-[26px] text-[13px] text-black dark:text-white_dark'>
-      {name ? name : 'The Octocat'}
+      {name}
     </h2>
   );
 }

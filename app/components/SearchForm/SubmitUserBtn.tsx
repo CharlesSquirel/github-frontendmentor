@@ -5,13 +5,12 @@ import { useUser } from '@/app/context/GithubSearchContext';
 export default function SubmitUserBtn() {
   const { fetchUser, userSearch } =
     useUser();
+
   const handleSubmit = (
     e: React.MouseEvent
   ) => {
     e.preventDefault();
-    console.log(
-      `userSearch in btn: ${userSearch}`
-    );
+
     fetchUser(userSearch);
   };
   return (

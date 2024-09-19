@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 interface UserInfoProps {
   src: string;
-  text: string;
+  text?: string;
   width: number;
   height: number;
   isLink?: boolean;

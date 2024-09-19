@@ -1,21 +1,21 @@
 import Image from 'next/image';
-import userMockImg from '../../assets/user.svg';
 import UserName from './UserName';
 import UserTag from './UserTag';
 import UserDate from './UserDate';
-import { UserCardHeaderProps } from '@/app/utils/types';
+import { UserCardHeaderMobileProps } from '@/app/utils/types';
 import UserBio from './UserBio';
 
 export default function UserCardHeaderMobile({
   userName,
   userTag,
   userDate,
-}: UserCardHeaderProps) {
+  src,
+}: UserCardHeaderMobileProps) {
   return (
     <div className='md:hidden mb-[23px] sm:mb-[32px]'>
       <div className='flex gap-5 sm:gap-10 mb-[33px] sm:mb-[24px] sm:items-center'>
         <Image
-          src={userMockImg}
+          src={src}
           alt="User's avatar"
           width={70}
           height={70}
