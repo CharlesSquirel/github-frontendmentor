@@ -53,12 +53,12 @@ Users should be able to:
 
 ### Built with
 
-- [React](https://reactjs.org/)(https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) - JS library
-- [TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-- [Next.js](https://nextjs.org/)(https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) - React framework
-- [Tailwind](https://tailwindcss.com/) - For styles
-- [Jest](https://testing-library.com/)(https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) - For basic unit tests
-- [Testing-Library](https://testing-library.com/)(https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
+- ![React](https://reactjs.org/)(https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) - JS library
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Next JS](https://nextjs.org/)(https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) - React framework
+- ![TailwindCSS](https://tailwindcss.com/) - For styles
+- ![Jest](https://testing-library.com/)(https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) - For basic unit tests
+- ![Testing-Library](https://testing-library.com/)(https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 
 ### What I learned
 
