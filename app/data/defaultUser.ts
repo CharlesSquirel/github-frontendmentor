@@ -2,7 +2,7 @@ import { GithubUserInterface } from '../context/GithubSearchContext';
 
 export const defaultUser: GithubUserInterface =
   {
-    login: '@octocat',
+    login: 'octocat',
     avatar_url: '',
     name: 'The Octocat',
     blog: 'https://github.blog',

@@ -28,6 +28,7 @@ export default function UserCard() {
             width={117}
             height={117}
             className='rounded-full hidden md:block'
+            priority
           />
           <div className='flex flex-col sm:w-[493px] md:w-[480px] w-[279px]'>
             <UserCardHeaderMobile
@@ -39,10 +40,15 @@ export default function UserCard() {
                 userMockImg
               }
               userName={
-                githubUser?.name
+                githubUser?.name ||
+                githubUser?.login
               }
               userTag={
                 githubUser?.login
+              }
+              userBio={
+                githubUser?.bio ||
+                defaultCommunicates.bio
               }
             />
 
@@ -74,13 +80,13 @@ export default function UserCard() {
               }
             />
 
-            <div className='flex md:flex-row flex-col md:gap-8 gap-4 items-centers'>
+            <div className='flex sm:flex-row flex-col sm:gap-8 gap-4 items-centers'>
               <div className='flex flex-col md:gap-[20px] gap-4'>
                 <UserInfo
                   src={locationImg}
                   text={
                     githubUser?.location ||
-                    defaultCommunicates.location
+                    defaultCommunicates.notAvaible
                   }
                   width={14}
                   height={20}
@@ -89,12 +95,12 @@ export default function UserCard() {
                   src={urlImg}
                   text={
                     githubUser?.blog ||
-                    defaultCommunicates.blog
+                    defaultCommunicates.notAvaible
                   }
                   width={20}
                   height={20}
                   isLink={Boolean(
-                    githubUser
+                    githubUser?.blog
                   )}
                 />
               </div>
@@ -103,7 +109,7 @@ export default function UserCard() {
                   src={twitterImg}
                   text={
                     githubUser?.twitter_username ||
-                    defaultCommunicates.twitter
+                    defaultCommunicates.notAvaible
                   }
                   width={20}
                   height={16}
@@ -112,7 +118,7 @@ export default function UserCard() {
                   src={companyImg}
                   text={
                     githubUser?.company ||
-                    defaultCommunicates.company
+                    defaultCommunicates.notAvaible
                   }
                   width={20}
                   height={20}

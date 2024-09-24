@@ -1,3 +1,4 @@
+import { defaultCommunicates } from '@/app/data/defaultCommuncates';
 import Image from 'next/image';
 
 interface UserInfoProps {
@@ -22,13 +23,26 @@ export default function UserInfo({
         alt=''
         width={width}
         height={height}
+        className={`${
+          text ===
+          defaultCommunicates.notAvaible
+            ? 'opacity-50'
+            : ''
+        }`}
       />
       <p
         className={`${
           isLink
             ? 'underline cursor-pointer hover:opacity-85'
             : ''
-        } sm:text-[15px] text-[13px] text-darkBlue dark:text-white_dark`}
+        } 
+        ${
+          text ===
+          defaultCommunicates.notAvaible
+            ? 'opacity-50'
+            : ''
+        }
+        sm:text-[15px] text-[13px] text-darkBlue dark:text-white_dark`}
       >
         {isLink ? (
           <a href={text}>{text}</a>

@@ -10,6 +10,7 @@ export default function UserCardHeaderMobile({
   userTag,
   userDate,
   src,
+  userBio,
 }: UserCardHeaderMobileProps) {
   return (
     <div className='md:hidden mb-[23px] sm:mb-[32px]'>
@@ -20,6 +21,7 @@ export default function UserCardHeaderMobile({
           width={70}
           height={70}
           className='rounded-full w-[70px] h-[70px] sm:w-[117px] sm:h-[117px]'
+          priority
         />
 
         <div className='flex flex-col'>
@@ -28,7 +30,7 @@ export default function UserCardHeaderMobile({
           <UserDate date={userDate} />
         </div>
       </div>
-      <UserBio />
+      <UserBio userBio={userBio} />
     </div>
   );
 }

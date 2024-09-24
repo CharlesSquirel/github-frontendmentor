@@ -63,6 +63,7 @@ export default function DarkmodeBtn() {
       <button
         type='button'
         onClick={toggleTheme}
+        aria-label='Dark mode button'
       >
         {!isDark ? (
           <MoonIcon />
