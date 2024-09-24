@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./app/assets/Screenshots_light_desktop.png)
-![](./app/assets/Screenshots_dark_desktop.png)
-![](./app/assets/Screenshots_light_tablet.png)
-![](./app/assets/Screenshots_dark_tablet.png)
-![](./app/assets/Screenshots_light_mobile.png)
-![](./app/assets/Screenshots_dark_mobile.png)
+<img src="./app/assets/Screenshot_light_desktop.png" alt="Light mode screenshot - desktop" width="600px" />
+<img src="./app/assets/Screenshot_dark_desktop.png" alt="Dark mode screenshot - desktop" width="600px" />
+<img src="./app/assets/Screenshot_light_tablet.png" alt="Light mode screenshot - tablet" width="400px" />
+<img src="./app/assets/Screenshot_dark_tablet.png" alt="Dark mode screenshot - tablet" width="400px" />
+<img src="./app/assets/Screenshot_light_mobile.png" alt="Light mode screenshot - mobile" width="300px" />
+<img src="./app/assets/Screenshot_dark_mobile.png" alt="Dark mode screenshot - mobile" width="300px" />
 
 ### Links
 
