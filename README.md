@@ -35,10 +35,14 @@ Users should be able to:
   <img src="./app/assets/Screenshot_light_desktop.png" alt="Light mode screenshot - desktop" width="400px" />
   <img src="./app/assets/Screenshot_dark_desktop.png" alt="Dark mode screenshot - desktop" width="400px" />
 </div>
-<img src="./app/assets/Screenshot_light_tablet.png" alt="Light mode screenshot - tablet" width="400px" />
-<img src="./app/assets/Screenshot_dark_tablet.png" alt="Dark mode screenshot - tablet" width="400px" />
-<img src="./app/assets/Screenshot_light_mobile.png" alt="Light mode screenshot - mobile" width="300px" />
-<img src="./app/assets/Screenshot_dark_mobile.png" alt="Dark mode screenshot - mobile" width="300px" />
+<div style="width: 830px; display: flex; justify-content: space-beetwen">
+  <img src="./app/assets/Screenshot_light_tablet.png" alt="Light mode screenshot - tablet" width="400px" />
+  <img src="./app/assets/Screenshot_dark_tablet.png" alt="Dark mode screenshot - tablet" width="400px" />
+</div>
+<div style="width: 830px; display: flex; justify-content: space-beetwen">
+  <img src="./app/assets/Screenshot_light_mobile.png" alt="Light mode screenshot - mobile" width="300px" />
+  <img src="./app/assets/Screenshot_dark_mobile.png" alt="Dark mode screenshot - mobile" width="300px" />
+</div>
 
 ### Links
 
@@ -49,10 +53,12 @@ Users should be able to:
 
 ### Built with
 
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/)(https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) - JS library
+- [TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- [Next.js](https://nextjs.org/)(https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) - React framework
 - [Tailwind](https://tailwindcss.com/) - For styles
-- [Jest](https://testing-library.com/) - For basic unit tests
+- [Jest](https://testing-library.com/)(https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) - For basic unit tests
+- [Testing-Library](https://testing-library.com/)(https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 
 ### What I learned
 
