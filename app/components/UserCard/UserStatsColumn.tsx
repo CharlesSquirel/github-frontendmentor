@@ -1,6 +1,6 @@
 interface UserStatsProps {
   title: string;
-  data: string;
+  data?: string;
 }
 
 export default function UserStatsColumn({

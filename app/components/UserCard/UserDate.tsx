@@ -1,5 +1,5 @@
 interface UserDateProps {
-  date: string;
+  date?: string;
 }
 
 export default function UserDate({

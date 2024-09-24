@@ -1,5 +1,5 @@
 interface UserNameProps {
-  name: string;
+  name?: string;
 }
 
 export default function UserName({

@@ -17,7 +17,7 @@ export default function UserCardHeaderDesktop({
         <UserDate date={userDate} />
       </div>
       <UserTag tag={userTag} />
-      <UserBio bio={userBio} />
+      <UserBio userBio={userBio} />
     </div>
   );
 }
