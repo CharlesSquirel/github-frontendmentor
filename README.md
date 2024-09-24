@@ -50,6 +50,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - [Tailwind](https://tailwindcss.com/) - For styles
+- [Jest](https://testing-library.com/) - For basic unit tests
 
 ### What I learned
 

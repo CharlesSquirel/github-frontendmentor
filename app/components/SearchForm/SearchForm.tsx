@@ -5,7 +5,10 @@ import SearchInput from './SearchInput';
 import ErrorUserMessage from './ErrorUserMessage';
 export default function SearchForm() {
   return (
-    <form className='sm:p-3 py-2 pr-2 sm:mb-[24px] mb-[16px] w-full flex bg-white rounded-[15px] dark:bg-gray_dark justify-between text-[18px] text-heading placeholder:text-darkBlue shadow-lg h-[69px] items-center'>
+    <form
+      data-testid='form'
+      className='sm:p-3 py-2 pr-2 sm:mb-[24px] mb-[16px] w-full flex bg-white rounded-[15px] dark:bg-gray_dark justify-between text-[18px] text-heading placeholder:text-darkBlue shadow-lg h-[69px] items-center'
+    >
       <div className='flex items-center sm:gap-6 md:pl-8 sm:pl-5 pl-4 gap-2'>
         <Image
           src={searchImg}
