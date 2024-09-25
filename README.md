@@ -1,6 +1,7 @@
 # Frontend Mentor - GitHub user search app solution
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is my first project after a long break from coding. A very good warm-up in which I learned something new - implementing dark mode with tailwind. By the way, working with the tailwind, especially with RWD, is very pleasant. As a reminder, I added simple unit tests to refresh this topic a bit.
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
 ## Table of contents
 
@@ -14,7 +15,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,7 +27,6 @@ Users should be able to:
 - Search for GitHub users by their username
 - See relevant user information based on their search
 - Switch between light and dark themes
-- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
 ### Screenshot
 
@@ -62,36 +61,25 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Custom hook using context:
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
+export const useCustomHookWithContext =
+  () => {
+    const context =
+      useContext(myContext);
+    if (context === undefined) {
+      throw new Error(
+        'Context must be within context provider'
+      );
+    }
+    return context;
+  };
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Dark mode tailwind guide](https://prismic.io/blog/tailwind-css-darkmode-tutorial) - The new topic is primarily dark mode and its support in tailwind. I searched a bit on the Internet, where there are a lot of articles on this subject, but in the end I found this article described very well.
 
 ## Author
 
