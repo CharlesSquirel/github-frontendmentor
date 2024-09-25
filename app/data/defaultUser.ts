@@ -10,7 +10,7 @@ export const defaultUser: GithubUserInterface =
     company: '@github',
     bio: 'This profile has no bio',
     twitter_username: 'Not Available',
-    created_at: '2011-01-25T18:44:36Z',
+    created_at: 'Joined 25 Jan 2011',
     public_repos: '8',
     followers: '3938',
     following: '9',
