@@ -5,7 +5,7 @@ import {
 } from '@testing-library/react';
 import Home from './page.tsx';
 
-describe('Page unit tests', () => {
+describe('App basic unit tests', () => {
   beforeEach(() => {
     render(<Home />);
   });
@@ -18,6 +18,11 @@ describe('Page unit tests', () => {
     const header =
       screen.getByRole('banner');
     expect(header).toBeInTheDocument();
+    const heading = screen.getByRole(
+      'heading',
+      { level: 1 }
+    );
+    expect(heading).toBeInTheDocument();
   });
   it('renders the search component', () => {
     const searchComponent =
@@ -41,5 +46,13 @@ describe('Page unit tests', () => {
     expect(
       submitButton.disabled
     ).toBeTruthy();
+  });
+
+  it('renders user card', () => {
+    const userCard =
+      screen.getByRole('article');
+    expect(
+      userCard
+    ).toBeInTheDocument();
   });
 });
