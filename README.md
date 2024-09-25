@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/CharlesSquirel/github-frontendmentor)
+- Live Site URL: [Add live site URL here](https://github-frontendmentor.vercel.app/)
 
 ## My process
 
@@ -83,5 +83,5 @@ export const useCustomHookWithContext =
 
 ## Author
 
-- Github - [@yourusername](https://www.twitter.com/yourusername)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Github - [@CharlesSquirel](https://www.github.com/CharlesSquirel)
+- Frontend Mentor - [@CharlesSquirel](https://www.frontendmentor.io/profile/CharlesSquirel)
