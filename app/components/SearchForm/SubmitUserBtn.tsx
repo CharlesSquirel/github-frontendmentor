@@ -17,7 +17,8 @@ export default function SubmitUserBtn() {
     <button
       onClick={handleSubmit}
       type='submit'
-      className='bg-blue hover:opacity-80 text-white_dark sm:w-[106px] sm:h-[50px] w-[84px] h-[46px] rounded-[10px] font-bold sm:text-[16px] text-[14px]'
+      className='bg-blue hover:opacity-80 text-white_dark sm:w-[106px] sm:h-[50px] w-[84px] h-[46px] rounded-[10px] font-bold sm:text-[16px] text-[14px] cursor-pointer'
+      disabled={!userSearch.trim()}
     >
       Search
     </button>
